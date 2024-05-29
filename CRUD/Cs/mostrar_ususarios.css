@@ -1,0 +1,122 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+.tittle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    height: 60px;
+    margin: 1em;
+    background: linear-gradient(45deg, #ff6f61, #ff9671);
+    color: #fff;
+    border-radius: .5em;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* User List Container */
+#userList {
+    max-width: 800px;
+    margin: 50px auto;
+    margin-bottom: 0;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* User Element */
+.user-element {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+    border: 1px solid #ba68c8;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.user-element:hover {
+    transform: scale(1.02);
+}
+
+/* User Info */
+.user-element div {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #6a1b9a;
+}
+
+/* Buttons */
+.user-element button {
+    align-self: flex-start;
+    padding: 10px 15px;
+    margin-right: 5px;
+    font-size: 14px;
+    color: #fff;
+    background: #29b6f6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: .5em;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.user-element button:hover {
+    background: #0288d1;
+    transform: scale(1.05);
+}
+
+.user-element button:nth-child(2) {
+    background: #ff7043;
+}
+
+.user-element button:nth-child(2):hover {
+    background: #e64a19;
+}
+
+/* Volver Button Container */
+.container__volver {
+    display: flex;
+    justify-content: end;
+    margin: 20px 0;
+}
+
+/* Volver Button Styles */
+.volver {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #8bc34a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 9em;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.volver:hover {
+    background-color: #689f38;
+    transform: scale(1.05);
+}
+
+/* Link Styles within the Button */
+.volver a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Ensure link takes full button area */
+.volver a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 100%;
+}
